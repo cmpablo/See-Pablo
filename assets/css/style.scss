@@ -1,0 +1,40 @@
+@import "partials/variables";
+@import "partials/mixins";
+@include google-font("Work+Sans");
+
+body {
+  background-color: $bg-color;
+  font-family: $body-text-font;
+  color: $body-text-color;
+  height: $body-height;
+  margin: $margin-body;
+}
+
+h1 {
+  @include left-justify-text;
+  font-size: $large-font-size;
+  color: $header-text-color
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include left-justify-text;
+  @include content-margins;
+  font-family: $headline-font;
+  color: $header-text-color;
+}
+
+p {
+  @include default-body-text;
+  @include left-justify-text;
+  font-family: $body-text-font;
+}
+
+// ========================= GALLERY =========================
+
+.gallery img {
+  margin: 10px;
+}
