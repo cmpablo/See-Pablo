@@ -1,13 +1,20 @@
 @import "partials/variables";
 @import "partials/mixins";
 @include google-font("Work+Sans");
-
 body {
   background-color: $bg-color;
   font-family: $body-text-font;
   color: $body-text-color;
   height: $body-height;
   margin: $margin-body;
+}
+
+.container-fluid {
+  margin: -50px 0 0 0;
+}
+
+.content-section {
+  margin: 0 0 100px 0;
 }
 
 h1 {
@@ -33,8 +40,15 @@ p {
   font-family: $body-text-font;
 }
 
-// ========================= GALLERY =========================
+.navbar {
+  background-color: $bg-color;
+}
 
-.gallery img {
-  margin: 10px;
+// ========================= GALLERY =========================
+.gallery {
+  display: table-cell;
+  text-align: center;
+  img {
+    margin: 15px;
+  }
 }

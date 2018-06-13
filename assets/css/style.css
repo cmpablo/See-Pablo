@@ -7,9 +7,17 @@ body {
   margin: 175px 0 0 0;
 }
 
+.container-fluid {
+  margin: -50px 0 0 0;
+}
+
+.content-section {
+  margin: 0 0 100px 0;
+}
+
 h1 {
   text-align: left;
-  font-size: 80px;
+  font-size: 70px;
   color: #FFF;
 }
 
@@ -31,7 +39,16 @@ p {
   font-family: "Work Sans", sans-serif;
 }
 
+.navbar {
+  background-color: #000;
+}
+
+.gallery {
+  display: table-cell;
+  text-align: center;
+}
+
 .gallery img {
-  margin: 10px;
+  margin: 15px;
 }
 /*# sourceMappingURL=style.css.map */
