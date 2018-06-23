@@ -1,7 +1,6 @@
 @import "partials/variables";
 @import "partials/mixins";
 @include google-font("Work+Sans");
-
 body {
   background-color: $bg-color;
   font-family: $body-text-font;
@@ -12,6 +11,10 @@ body {
 
 .container-fluid {
   margin: -50px 0 0 0;
+}
+
+.container {
+  max-width: 900px;
 }
 
 .content-section {
@@ -49,11 +52,11 @@ p {
 // ========================= ABOUT SECTION BACKGROUND =========================
 .header-bg {
   position: relative;
-  background-image: linear-gradient( to bottom right, #2fe7ff, #2159f3);
+  background-image: linear-gradient( to bottom right, #65ffff, #5f8aff);
   height: 450px;
   margin: -110px 0 150px 0;
   h1 {
-    padding: 30px 0 0 0;
+    padding: 50px 0 0 0;
   }
 }
 
@@ -62,6 +65,7 @@ p {
 }
 
 /* big triangle */
+
 .big-triangle:before {
   right: 50%;
   border-right: 1000px solid transparent;
@@ -74,14 +78,14 @@ p {
   border-right: 1000px solid;
 }
 
-.big-triangle:after, .big-triangle:before {
+.big-triangle:after,
+.big-triangle:before {
   content: '';
   position: absolute;
   bottom: 0;
   width: 50%;
   z-index: 100;
-
-/*  change the height and the color below */
+  /*  change the height and the color below */
   border-bottom: 160px solid $bg-color;
   -moz-transform: rotate(0.000001deg);
   -webkit-transform: rotate(0.000001deg);
@@ -91,10 +95,26 @@ p {
 }
 
 // ========================= GALLERY CONTENT =========================
-.gallery {
-  display: table-cell;
-  text-align: center;
+#workSection {
+  margin: 0 auto;
+}
+
+.gallery-img {
+    margin: 10px;
+    float: left;
+    width: 400px;
   img {
     margin: 20px 15px;
   }
+  a:hover {
+    text-decoration: none;
+  }
+  .text {
+    padding: 5px 15px;
+  }
+}
+
+// ========================= RESUME CONTENT =========================
+#cvSection {
+  clear: both;
 }

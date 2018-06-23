@@ -2,20 +2,23 @@
 $bg-color: #000;
 $body-text-color: #FFF;
 $header-text-color: #FFF;
-$text-highlight-color: #51ACCC;
-$img-hover-opacity: 0.7;
+$btn-text-color: #FFF;
+$primary-color: #FF0095;
+$secondary-color: #F7EB5C;
+$tertiary-color: #00FFFF;
+$img-hover-opacity: 0.85;
 
 // ============================== FONTS ==============================
 $headline-font: 'Work Sans', sans-serif;
 $body-text-font: 'Work Sans', sans-serif;
 $default-font-size: 18px;
 $small-font-size: 14px;
-$large-font-size: 70px;
+$large-font-size: 60px;
 $default-line-height: 1.6;
 
 // ============================== ANIMATIONS + THINGS ==============================
 $border-radius: 3px;
-$transition-time: 0.4;
+$transition-time: 0.5s ease;
 
 // ============================== SIZES ===================================
 $body-height: 100%;
