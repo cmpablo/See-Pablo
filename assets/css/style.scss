@@ -106,13 +106,19 @@ p {
   img {
     margin: 20px 15px;
   }
-  a:hover {
-    text-decoration: none;
-  }
   .text {
     padding: 5px 15px;
   }
+  a:link {
+    color: $primary-color;
+  }
+  a:hover {
+    text-decoration: none;
+    color: $primary-hover-color;
+  }
 }
+
+
 
 // ========================= RESUME CONTENT =========================
 #cvSection {

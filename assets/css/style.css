@@ -106,12 +106,17 @@ p {
   margin: 20px 15px;
 }
 
-.gallery-img a:hover {
-  text-decoration: none;
-}
-
 .gallery-img .text {
   padding: 5px 15px;
+}
+
+.gallery-img a:link {
+  color: #FF0095;
+}
+
+.gallery-img a:hover {
+  text-decoration: none;
+  color: #fa60ba;
 }
 
 #cvSection {
