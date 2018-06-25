@@ -22,7 +22,8 @@ $default-line-height: 1.6;
 
 // ============================== ANIMATIONS + THINGS ==============================
 $border-radius: 3px;
-$transition-time: 0.5s ease;
+$transition-time: all 0.4s ease-in-out 0s;
+$transition-time-quick: all 0.3s ease-in-out 0s;
 
 // ============================== SIZES ===================================
 $body-height: 100%;

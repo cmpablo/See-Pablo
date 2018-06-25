@@ -100,9 +100,10 @@ p {
 }
 
 .gallery-img {
-    margin: 10px;
-    float: left;
-    width: 400px;
+  position: relative;
+  margin: 10px;
+  float: left;
+  width: 400px;
   img {
     margin: 20px 15px;
   }
@@ -110,16 +111,66 @@ p {
     padding: 5px 15px;
   }
   a:link {
-    color: $primary-color;
-  }
-  a:hover {
-    text-decoration: none;
-    color: $primary-hover-color;
-  }
+    color: $secondary-color;
+  } // a:hover {
+  //   text-decoration: none;
+  //   color: $primary-hover-color;
+  // }
 }
 
+.gallery-img .overlay {
+  background: #000;
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  left: 15px;
+  top: 20px; // bottom: 0;
+  // right: 0;
+  opacity: 0;
+  -webkit-transition: $transition-time;
+  -moz-transition: $transition-time;
+  transition: $transition-time;
+}
 
+.gallery-img:hover .overlay {
+  opacity: 0.7;
+}
 
+.details {
+  position: absolute;
+  text-align: center;
+  padding: 0 0 0 35px; // padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: $transition-time-quick;
+  -moz-transition: $transition-time-quick;
+  transition: $transition-time-quick;
+}
+
+.gallery-img:hover .details {
+  top: 55%;
+  left: 50%;
+  opacity: 1;
+  text-decoration: none;
+  color: $secondary-color;
+}
+
+// @media screen and (max-width: 640px) {
+//   .container {
+//     display: block;
+//     width: 100%;
+//   }
+// }
+// @media screen and (min-width: 900px) {
+//   .container {
+//     width: 33.33333%;
+//   }
+// }
 // ========================= RESUME CONTENT =========================
 #cvSection {
   clear: both;
