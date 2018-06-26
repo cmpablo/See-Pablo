@@ -59,11 +59,11 @@ p {
 
 .footer p {
   font-size: 14px;
-  color: #BFBFBF;
+  color: #818181;
 }
 
 .footer span {
-  color: #BFBFBF;
+  color: #818181;
 }
 
 .footer li {
@@ -179,5 +179,22 @@ p {
 
 #aboutSection {
   clear: both;
+}
+
+.work-details-btn a:link {
+  color: #818181;
+}
+
+.work-details-btn a:visited {
+  color: #818181;
+}
+
+.work-details-btn a:hover {
+  text-decoration: none;
+  color: #b8b8b8;
+}
+
+.details-content {
+  margin: 0 0 75px 100px;
 }
 /*# sourceMappingURL=style.css.map */

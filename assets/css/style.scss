@@ -178,3 +178,21 @@ p {
 #aboutSection {
   clear: both;
 }
+
+// ========================= DETAILS PAGE CONTENT =========================
+.work-details-btn {
+  a:link {
+    color: $btn-text-color;
+  }
+  a:visited {
+    color: $btn-text-color;
+  }
+  a:hover {
+    text-decoration: none;
+    color: $btn-hover-color;
+  }
+}
+
+.details-content {
+  margin: 0 0 75px 100px;
+}
