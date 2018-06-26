@@ -16,16 +16,12 @@ body {
   padding: 0;
 }
 
-.container {
-  max-width: 900px;
-}
+// .container {
+//   max-width: 900px;
+// }
 
 .content-section {
   margin: 0 0 100px 0;
-}
-
-.navbar {
-  background-color: $bg-color;
 }
 
 h1 {
@@ -50,6 +46,11 @@ p {
   @include default-body-text;
   @include left-justify-text;
   font-family: $body-text-font;
+}
+
+// ================================= NAVBAR ===================================
+.navbar {
+  background-color: $bg-color;
 }
 
 // ================================= FOOTER ===================================
@@ -79,8 +80,6 @@ p {
     text-decoration: none;
   }
 }
-
-
 
 // ========================= ABOUT SECTION BACKGROUND =========================
 .header-bg {
@@ -131,7 +130,7 @@ p {
   }
   .text {
     padding: 5px 15px;
-  } 
+  }
 }
 
 .gallery-img .overlay {
@@ -174,18 +173,6 @@ p {
   text-decoration: none;
   color: $secondary-color;
 }
-
-// @media screen and (max-width: 640px) {
-//   .container {
-//     display: block;
-//     width: 100%;
-//   }
-// }
-// @media screen and (min-width: 900px) {
-//   .container {
-//     width: 33.33333%;
-//   }
-// }
 
 // ========================= RESUME CONTENT =========================
 #aboutSection {
