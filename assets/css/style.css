@@ -111,10 +111,6 @@ p {
   padding: 5px 15px;
 }
 
-.gallery-img a:link {
-  color: #F7EB5C;
-}
-
 .gallery-img .overlay {
   background: #000;
   position: absolute;
@@ -129,7 +125,7 @@ p {
 }
 
 .gallery-img:hover .overlay {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .details {
@@ -156,7 +152,7 @@ p {
   color: #F7EB5C;
 }
 
-#cvSection {
+#aboutSection {
   clear: both;
 }
 /*# sourceMappingURL=style.css.map */

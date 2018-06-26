@@ -109,13 +109,7 @@ p {
   }
   .text {
     padding: 5px 15px;
-  }
-  a:link {
-    color: $secondary-color;
-  } // a:hover {
-  //   text-decoration: none;
-  //   color: $primary-hover-color;
-  // }
+  } 
 }
 
 .gallery-img .overlay {
@@ -124,8 +118,7 @@ p {
   height: 80%;
   width: 100%;
   left: 15px;
-  top: 20px; // bottom: 0;
-  // right: 0;
+  top: 20px;
   opacity: 0;
   -webkit-transition: $transition-time;
   -moz-transition: $transition-time;
@@ -133,13 +126,13 @@ p {
 }
 
 .gallery-img:hover .overlay {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .details {
   position: absolute;
   text-align: center;
-  padding: 0 0 0 35px; // padding-right: 1em;
+  padding: 0 0 0 35px;
   width: 100%;
   top: 50%;
   left: 50%;
@@ -171,7 +164,8 @@ p {
 //     width: 33.33333%;
 //   }
 // }
+
 // ========================= RESUME CONTENT =========================
-#cvSection {
+#aboutSection {
   clear: both;
 }
