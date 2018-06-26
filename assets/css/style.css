@@ -3,12 +3,15 @@ body {
   background-color: #000;
   font-family: "Work Sans", sans-serif;
   color: #FFF;
-  height: 100%;
   margin: 175px 0 0 0;
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .container-fluid {
   margin: -50px 0 0 0;
+  padding: 0;
 }
 
 .container {
@@ -48,6 +51,39 @@ p {
   font-family: "Work Sans", sans-serif;
 }
 
+.footer {
+  border-top: 1px solid #00FFFF;
+  padding: 15px;
+  height: 50px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #BFBFBF;
+}
+
+.footer span {
+  color: #BFBFBF;
+}
+
+.footer li {
+  display: inline;
+  padding: 0 5px;
+  font-size: 18px;
+}
+
+.footer .icons {
+  text-align: right;
+}
+
+.footer .fab:hover {
+  color: #FF0095;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
 .header-bg {
   position: relative;
   background-image: linear-gradient(to bottom right, #65ffff, #5f8aff);
@@ -59,21 +95,15 @@ p {
   padding: 50px 0 0 0;
 }
 
-.region-wrap.pl-region-wrap-template.pl-row.no-pad {
-  overflow: hidden;
-}
-
 /* big triangle */
 .big-triangle:before {
   right: 50%;
   border-right: 1000px solid transparent;
-  border-left: 1000px solid;
 }
 
 .big-triangle:after {
   left: 50%;
   border-left: 1000px solid transparent;
-  border-right: 1000px solid;
 }
 
 .big-triangle:after,
@@ -84,12 +114,7 @@ p {
   width: 50%;
   z-index: 100;
   /*  change the height and the color below */
-  border-bottom: 160px solid #000;
-  -moz-transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
+  border-bottom: 175px solid #000;
 }
 
 #workSection {

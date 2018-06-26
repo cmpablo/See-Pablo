@@ -5,12 +5,15 @@ body {
   background-color: $bg-color;
   font-family: $body-text-font;
   color: $body-text-color;
-  height: $body-height;
   margin: $margin-body;
+  height: $body-height;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .container-fluid {
   margin: -50px 0 0 0;
+  padding: 0;
 }
 
 .container {
@@ -49,6 +52,36 @@ p {
   font-family: $body-text-font;
 }
 
+// ================================= FOOTER ===================================
+.footer {
+  border-top: 1px solid $tertiary-color;
+  padding: 15px;
+  height: 50px;
+  p {
+    font-size: $small-font-size;
+    color: $btn-text-color;
+  }
+  span {
+    color: $btn-text-color;
+  }
+  li {
+    display: inline;
+    padding: 0 5px;
+    font-size: $default-font-size;
+  }
+  .icons {
+    text-align: right;
+  }
+  .fab:hover {
+    color: $primary-color;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+
+
 // ========================= ABOUT SECTION BACKGROUND =========================
 .header-bg {
   position: relative;
@@ -60,22 +93,16 @@ p {
   }
 }
 
-.region-wrap.pl-region-wrap-template.pl-row.no-pad {
-  overflow: hidden;
-}
-
 /* big triangle */
 
 .big-triangle:before {
   right: 50%;
   border-right: 1000px solid transparent;
-  border-left: 1000px solid;
 }
 
 .big-triangle:after {
   left: 50%;
   border-left: 1000px solid transparent;
-  border-right: 1000px solid;
 }
 
 .big-triangle:after,
@@ -86,12 +113,7 @@ p {
   width: 50%;
   z-index: 100;
   /*  change the height and the color below */
-  border-bottom: 160px solid $bg-color;
-  -moz-transform: rotate(0.000001deg);
-  -webkit-transform: rotate(0.000001deg);
-  -o-transform: rotate(0.000001deg);
-  -ms-transform: rotate(0.000001deg);
-  transform: rotate(0.000001deg);
+  border-bottom: 175px solid $bg-color;
 }
 
 // ========================= GALLERY CONTENT =========================
