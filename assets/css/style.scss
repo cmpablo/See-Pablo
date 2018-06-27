@@ -51,6 +51,7 @@ p {
 // ================================= NAVBAR ===================================
 .navbar {
   background-color: $bg-color;
+  box-shadow: 0 0px 10px 0px $bg-color;
 }
 
 // ================================= FOOTER ===================================
@@ -74,7 +75,7 @@ p {
     text-align: right;
   }
   .fab:hover {
-    color: $primary-color;
+    color: $secondary-color;
   }
   a {
     text-decoration: none;
@@ -189,10 +190,35 @@ p {
   }
   a:hover {
     text-decoration: none;
-    color: $btn-hover-color;
+    color: $secondary-color;
   }
 }
 
 .details-content {
   margin: 0 0 75px 100px;
+  .img-col,
+  .txt-col {
+    padding: 0;
+  }
+  img {
+    margin: 25px 0;
+    width: 500px;
+  }
+  p {
+    font-size: $small-font-size;
+    margin: 25px 0;
+  }
+  a:link {
+    font-size: $small-font-size;
+    color: $btn-text-color;
+  }
+  a:visited {
+    font-size: $small-font-size;
+    color: $btn-text-color;
+  }
+  a:hover {
+    font-size: $small-font-size;
+    text-decoration: none;
+    color: $secondary-color;
+  }
 }
