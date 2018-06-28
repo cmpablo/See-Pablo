@@ -82,10 +82,10 @@ p {
   }
 }
 
-// ========================= ABOUT SECTION BACKGROUND =========================
+// ========================= INTRO HEADER SECTION BACKGROUND =========================
 .header-bg {
   position: relative;
-  background-image: linear-gradient( to bottom right, #65ffff, #5f8aff);
+  background-image: linear-gradient( to bottom right, #65ffff, #6086ee, #5f8aff);
   height: 450px;
   margin: -110px 0 150px 0;
   h1 {
@@ -93,8 +93,7 @@ p {
   }
 }
 
-/* big triangle */
-
+// big triangle
 .header-bg:before {
   right: 50%;
   border-right: 1000px solid transparent;
