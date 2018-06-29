@@ -11,17 +11,8 @@ body {
   overflow-x: hidden;
 }
 
-.container-fluid {
-  margin: -50px 0 0 0;
-  padding: 0;
-}
-
 .container {
   max-width: 900px;
-}
-
-.content-section {
-  margin: 0 0 100px 0;
 }
 
 h1 {
@@ -87,7 +78,7 @@ p {
   position: relative;
   background-image: linear-gradient( to bottom right, #65ffff, #6086ee, #5f8aff);
   height: 450px;
-  margin: -110px 0 150px 0;
+  margin: -110px 0 100px 0;
   h1 {
     padding: 50px 0 0 0;
   }
@@ -117,6 +108,7 @@ p {
 
 // ========================= GALLERY CONTENT =========================
 #workSection {
+  overflow: hidden;
   margin: 0 auto;
 }
 
@@ -174,12 +166,80 @@ p {
   color: $secondary-color;
 }
 
-// ========================= RESUME CONTENT =========================
+// ======================== ABOUT ME CONTENT ========================
 #aboutSection {
   clear: both;
+  margin: $section-margin;
 }
 
-// ========================= DETAILS PAGE CONTENT =========================
+.timeline {
+  p {
+    font-size: $small-font-size;
+  }
+  ul li {
+    list-style-type: none;
+    position: relative;
+    width: 3px;
+    margin: 0 auto;
+    padding-top: 1px;
+    background: $body-text-color;
+  }
+  ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 3px;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: $primary-color;
+  }
+  .marker-content {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    background: $bg-color;
+    border: 1px solid $primary-color;
+  }
+  .marker-content::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  ul li:nth-child(odd) .marker-content {
+    left: 40px;
+  }
+  ul li:nth-child(odd) .marker-content::before {
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent $primary-color transparent transparent;
+  }
+  ul li:nth-child(even) .marker-content {
+    left: -440px;
+  }
+  ul li:nth-child(even) .marker-content::before {
+    right: -15px;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent  transparent transparent $primary-color;
+  }
+  h6 {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+// ========================= CONTACT CONTENT =========================
+#contactSection {
+  clear: both;
+  margin: $section-margin;
+}
+
+// ====================== DETAILS PAGE CONTENT ======================
 .work-details-btn {
   a:link {
     color: $btn-text-color;
