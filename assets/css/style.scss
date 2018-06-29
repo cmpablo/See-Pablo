@@ -175,6 +175,7 @@ p {
 .timeline {
   p {
     font-size: $small-font-size;
+    margin: 0;
   }
   ul li {
     list-style-type: none;
@@ -182,7 +183,7 @@ p {
     width: 3px;
     margin: 0 auto;
     padding-top: 1px;
-    background: $body-text-color;
+    background: $grey-color;
   }
   ul li::after {
     content: '';
@@ -193,7 +194,8 @@ p {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: $primary-color;
+    background: $bg-color;
+    border: 2px solid $primary-color;
   }
   .marker-content {
     position: relative;
@@ -225,12 +227,40 @@ p {
   ul li:nth-child(even) .marker-content::before {
     right: -15px;
     border-width: 10px 0 10px 15px;
-    border-color: transparent  transparent transparent $primary-color;
+    border-color: transparent transparent transparent $primary-color;
   }
   h6 {
     display: block;
-    margin-bottom: 10px;
-  }
+    margin: 0 0 10px 0;
+  } // effects
+  // ul li::after {
+  //   transition: background $transition-time;
+  // }
+  // ul li.in-view::after {
+  //   background: $bg-color;
+  //   border: 1px solid $primary-color;
+  // }
+  // ul li .marker-content {
+  //   visibility: hidden;
+  //   opacity: 0;
+  //   transition: $transition-time;
+  // }
+  // ul li:nth-child(odd) .marker-content {
+  //   transform: translate3d(100px, 0, 0);
+  // }
+  // ul li:nth-child(even) .marker-content {
+  //   transform: translate3d(-100px, 0, 0);
+  // }
+  // ul li.in-view .marker-content {
+  //   -webkit-transform: translate(30px);
+  //   -moz-transform: translate(30px);
+  //   transform: translate(30px);
+  //   -webkit-transition: $transition-time;
+  //   -moz-transition: $transition-time;
+  //   transition: $transition-time;
+  //   visibility: visible;
+  //   opacity: 1;
+  // }
 }
 
 // ========================= CONTACT CONTENT =========================
@@ -282,5 +312,38 @@ p {
     font-size: $small-font-size;
     text-decoration: none;
     color: $secondary-color;
+  }
+}
+
+// ====================== MEDIA QUERIES ======================
+@media screen and (max-width: 900px) {
+  // about section timeline
+  .timeline {
+    ul li .marker-content {
+      width: 250px;
+    }
+    ul li:nth-child(even) .marker-content {
+      left: -289px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  // about section timeline
+  .timeline {
+    ul li {
+      margin-left: 20px;
+    }
+    ul li .marker-content {
+      width: calc(100vw - 91px);
+    }
+    ul li:nth-child(even) .marker-content {
+      left: 45px;
+    }
+    ul li:nth-child(even) .marker-content::before {
+      left: -15px;
+      border-width: 10px 0 10px 15px;
+      border-color: transparent $primary-color transparent transparent;
+    }
   }
 }
