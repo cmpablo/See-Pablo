@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <script src="assets/js/scrollspy.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <title>See Pablo - Portfolio</title>
@@ -21,15 +22,15 @@
 <body>
     <!-------------------------- NAVIGATION ---------------------------->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-        <a class="navbar-brand ml-3" href="index.html">
+        <a class="navbar-brand ml-3" href="#home">
             <img src="assets/images/logo.png" alt="logo" />
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" -target
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="myNavbar">
             <div class="navbar-nav ml-4" id="nav-btns">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -263,8 +264,8 @@
     <script>
         $(document).ready(function () {
             $('body').scrollspy({
-                target: ".navbar",
-                offset: 10
+                target: '.navbar',
+                offset: 0
             });
         });
     </script>
