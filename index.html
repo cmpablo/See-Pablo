@@ -11,22 +11,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
-    <script src="assets/js/scrollspy.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <title>See Pablo - Portfolio</title>
 </head>
 
-<!-- <body data-spy="scroll" data-target=".navbar" data-offset="0"> -->
-
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="0">
     <!-------------------------- NAVIGATION ---------------------------->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-        <a class="navbar-brand ml-3" href="#home">
+        <a class="navbar-brand ml-3" href="index.html">
             <img src="assets/images/logo.png" alt="logo" />
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" -target
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -262,11 +259,18 @@
 
     <!---------------------------------- JAVASCRIPT ---------------------------------->
     <script>
-        $(document).ready(function () {
-            $('body').scrollspy({
-                target: '.navbar',
-                offset: 0
-            });
+        $('#myNavbar a').on('click', function (event) {
+            if (this.hash !== '') {
+                event.preventDefault();
+
+                let hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+                    window.location.hash = hash;
+                });
+            }
         });
     </script>
 
