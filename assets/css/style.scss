@@ -39,6 +39,10 @@ p {
   font-family: $body-text-font;
 }
 
+hr {
+  border-top: 1px solid $grey-color;
+}
+
 // ================================= NAVBAR ===================================
 .navbar {
   background-color: $bg-color;
@@ -156,6 +160,13 @@ p {
   -webkit-transition: $transition-time-quick;
   -moz-transition: $transition-time-quick;
   transition: $transition-time-quick;
+  .project-title {
+    margin: -20px 0 0 0;
+  }
+  .project-subtitle {
+    font-size: $small-font-size;
+    margin: 0;
+  }
 }
 
 .gallery-img:hover .details {
@@ -200,7 +211,7 @@ p {
   .marker-content {
     position: relative;
     bottom: 0;
-    width: 400px;
+    width: 425px;
     padding: 15px;
     background: $bg-color;
     border: 1px solid $primary-color;
@@ -222,7 +233,7 @@ p {
     border-color: transparent $primary-color transparent transparent;
   }
   ul li:nth-child(even) .marker-content {
-    left: -440px;
+    left: -465px;
   }
   ul li:nth-child(even) .marker-content::before {
     right: -15px;
