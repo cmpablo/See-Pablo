@@ -276,7 +276,7 @@ hr {
 }
 
 .details-content {
-  margin: 0 0 75px 100px;
+  margin: 0 auto 75px auto;
 }
 
 .details-content .img-col,
