@@ -112,34 +112,35 @@ hr {
 
 // ========================= GALLERY CONTENT =========================
 #workSection {
-  overflow: hidden;
-  margin: 0 auto;
+  width: 850px;
+  margin: 0;
 }
 
 .gallery-img {
   position: relative;
-  margin: 0 35px 0 0;
-  float: left;
+  margin: 0 20px 0 0;
+  display: inline-block;
   width: 400px;
+  text-align: center;
+  vertical-align: middle;
   img {
     margin: 20px 15px;
   }
   .text {
     padding: 5px 15px;
   }
-}
-
-.gallery-img .overlay {
-  background: #000;
-  position: absolute;
-  height: 80%;
-  width: 100%;
-  left: 15px;
-  top: 20px;
-  opacity: 0;
-  -webkit-transition: $transition-time;
-  -moz-transition: $transition-time;
-  transition: $transition-time;
+  .overlay {
+    background: #000;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    left: 15px;
+    top: 20px;
+    opacity: 0;
+    -webkit-transition: $transition-time;
+    -moz-transition: $transition-time;
+    transition: $transition-time;
+  }
 }
 
 .gallery-img:hover .overlay {
@@ -243,7 +244,7 @@ hr {
   h6 {
     display: block;
     margin: 0 0 10px 0;
-  } 
+  }
 }
 
 // ========================= CONTACT CONTENT =========================
@@ -277,10 +278,13 @@ hr {
     width: 90%;
   }
   .title {
-    //color: $primary-color;
     background-color: $primary-color
   }
   .subhead {
+    margin: 0;
+  }
+  .inactive {
+    color: $grey-color;
     margin: 0;
   }
   p {
@@ -312,11 +316,26 @@ hr {
     ul li:nth-child(even) .marker-content {
       left: -289px;
     }
+  } // gallery images
+  #workSection {
+    width: 425px;
+    margin: 0 auto;
+    .gallery-img {
+      text-align: center;
+      vertical-align: middle;
+    }
   }
 }
 
 @media screen and (max-width: 600px) {
-  // about section timeline
+  // intro header
+  .header-bg {
+    height: 375px;
+    h1 {
+      font-size: $lg-font-size-resp;
+      padding: 30px 0 0 0;
+    }
+  } // about section timeline
   .timeline {
     ul li {
       margin-left: 20px;
@@ -331,6 +350,26 @@ hr {
       left: -15px;
       border-width: 10px 0 10px 15px;
       border-color: transparent $primary-color transparent transparent;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  // gallery images
+  #workSection {
+    width: 400px;
+    margin: 0 0 0 -20px;
+    .gallery-img {
+      text-align: center;
+      vertical-align: middle;
+      margin: 0 auto;
+      .overlay {
+        width: 350px;
+        margin: 0 0 0 10px;
+      }
+    }
+    img {
+      width: 350px;
     }
   }
 }
