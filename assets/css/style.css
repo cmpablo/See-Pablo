@@ -44,7 +44,8 @@ hr {
 
 .navbar {
   background-color: #000;
-  box-shadow: 0 0px 10px 0px #000;
+  -webkit-box-shadow: 0 0px 10px 0px #000;
+          box-shadow: 0 0px 10px 0px #000;
 }
 
 .footer {
@@ -82,6 +83,7 @@ hr {
 
 .header-bg {
   position: relative;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#65ffff), color-stop(#6086ee), to(#5f8aff));
   background-image: linear-gradient(to bottom right, #65ffff, #6086ee, #5f8aff);
   height: 450px;
   margin: -110px 0 100px 0;
@@ -141,7 +143,6 @@ hr {
   top: 20px;
   opacity: 0;
   -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
 
@@ -158,10 +159,8 @@ hr {
   left: 50%;
   opacity: 0;
   -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -206,7 +205,8 @@ hr {
   position: absolute;
   left: 50%;
   bottom: 3px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -286,11 +286,15 @@ hr {
 
 .details-content img {
   margin: 25px 0 0 0;
-  width: 500px;
+  width: 90%;
 }
 
 .details-content .title {
-  color: #01F4FC;
+  background-color: #FF0095;
+}
+
+.details-content .subhead {
+  margin: 0;
 }
 
 .details-content p {
