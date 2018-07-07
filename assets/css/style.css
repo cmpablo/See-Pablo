@@ -15,7 +15,7 @@ body {
 
 h1 {
   text-align: left;
-  font-size: 60px;
+  font-size: 55px;
   color: #FFF;
 }
 
@@ -40,6 +40,10 @@ p {
 
 hr {
   border-top: 1px solid #4E5059;
+}
+
+#logo {
+  width: 75px;
 }
 
 .navbar {
@@ -85,7 +89,7 @@ hr {
   position: relative;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#65ffff), color-stop(#6086ee), to(#5f8aff));
   background-image: linear-gradient(to bottom right, #65ffff, #6086ee, #5f8aff);
-  height: 450px;
+  height: 375px;
   margin: -110px 0 100px 0;
 }
 
@@ -286,8 +290,16 @@ hr {
   padding: 0;
 }
 
-.details-content img {
+.details-content .flat-img {
+  margin: 27px 0 0 0;
+}
+
+.details-content .screen-img {
   margin: -10px 0 0 0;
+}
+
+.details-content img {
+  margin: 0 0 35px 0;
   width: 90%;
 }
 

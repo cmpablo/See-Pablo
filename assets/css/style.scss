@@ -43,6 +43,10 @@ hr {
   border-top: 1px solid $grey-color;
 }
 
+#logo {
+  width: 75px;
+}
+
 // ================================= NAVBAR ===================================
 .navbar {
   background-color: $bg-color;
@@ -81,7 +85,7 @@ hr {
 .header-bg {
   position: relative;
   background-image: linear-gradient( to bottom right, #65ffff, #6086ee, #5f8aff);
-  height: 450px;
+  height: 375px;
   margin: -110px 0 100px 0;
   h1 {
     padding: 50px 0 0 0;
@@ -273,8 +277,14 @@ hr {
   .txt-col {
     padding: 0;
   }
-  img {
+  .flat-img {
+    margin: 27px 0 0 0;
+  }
+  .screen-img {
     margin: -10px 0 0 0;
+  }
+  img {
+    margin: 0 0 35px 0;
     width: 90%;
   }
   .title {
