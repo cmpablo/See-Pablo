@@ -303,8 +303,17 @@ hr {
   width: 90%;
 }
 
+.details-content .img-with-title {
+  margin: 0;
+}
+
 .details-content .title {
   background-color: #FF0095;
+}
+
+.details-content .subtitle {
+  font-size: 14px;
+  margin: 10px 0 35px 0;
 }
 
 .details-content .subhead {

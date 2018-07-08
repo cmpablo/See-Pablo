@@ -287,8 +287,15 @@ hr {
     margin: 0 0 35px 0;
     width: 90%;
   }
+  .img-with-title {
+    margin: 0;
+  }
   .title {
     background-color: $primary-color
+  }
+  .subtitle {
+    font-size: $small-font-size;
+    margin: 10px 0 35px 0;
   }
   .subhead {
     margin: 0;
