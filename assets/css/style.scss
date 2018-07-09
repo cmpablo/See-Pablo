@@ -188,66 +188,46 @@ hr {
   margin: $section-margin;
 }
 
-.timeline {
-  p {
-    font-size: $small-font-size;
-    margin: 0;
-  }
-  ul li {
-    list-style-type: none;
+.skills-chart {
+  display: table;
+  table-layout: fixed;
+  width: 60%;
+  max-width: 700px;
+  height: 250px;
+  margin: 0 auto;
+  background-image: linear-gradient(bottom right, rgba(255, 255, 255, 0.1) 20%, transparent 2%);
+  background-size: 100% 50px;
+  background-position: left top;
+  li {
     position: relative;
-    width: 3px;
-    margin: 0 auto;
-    padding-top: 1px;
-    background: $grey-color;
+    display: table-cell;
+    vertical-align: bottom;
+    height: 200px;
   }
-  ul li::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 3px;
-    transform: translateX(-50%);
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: $bg-color;
-    border: 2px solid $primary-color;
-  }
-  .marker-content {
-    position: relative;
-    bottom: 0;
-    width: 425px;
-    padding: 15px;
-    background: $bg-color;
-    border: 1px solid $primary-color;
-  }
-  .marker-content::before {
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-  }
-  ul li:nth-child(odd) .marker-content {
-    left: 40px;
-  }
-  ul li:nth-child(odd) .marker-content::before {
-    left: -15px;
-    border-width: 10px 15px 10px 0;
-    border-color: transparent $primary-color transparent transparent;
-  }
-  ul li:nth-child(even) .marker-content {
-    left: -465px;
-  }
-  ul li:nth-child(even) .marker-content::before {
-    right: -15px;
-    border-width: 10px 0 10px 15px;
-    border-color: transparent transparent transparent $primary-color;
-  }
-  h6 {
+  span {
+    margin: 0 50px;
     display: block;
-    margin: 0 0 10px 0;
+    background: rgba(#d1ecfa, .75);
+
+    animation: draw 1s ease-in-out;
+    &:before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      display: block;
+      text-align: center;
+      content: attr(title);
+      word-wrap: break-word;
+    }
+  }
+  .skill-name {
+    font-size: $small-font-size;
+  }
+  @keyframes draw {
+    0% {
+      height: 0;
+    }
   }
 }
 

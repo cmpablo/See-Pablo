@@ -192,75 +192,59 @@ hr {
   margin: 100px 0 0 0;
 }
 
-.timeline p {
-  font-size: 14px;
-  margin: 0;
-}
-
-.timeline ul li {
-  list-style-type: none;
-  position: relative;
-  width: 3px;
+.skills-chart {
+  display: table;
+  table-layout: fixed;
+  width: 60%;
+  max-width: 700px;
+  height: 250px;
   margin: 0 auto;
-  padding-top: 1px;
-  background: #4E5059;
+  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(20%, rgba(255, 255, 255, 0.1)), color-stop(2%, transparent));
+  background-image: linear-gradient(bottom right, rgba(255, 255, 255, 0.1) 20%, transparent 2%);
+  background-size: 100% 50px;
+  background-position: left top;
 }
 
-.timeline ul li::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 3px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: #000;
-  border: 2px solid #FF0095;
-}
-
-.timeline .marker-content {
+.skills-chart li {
   position: relative;
-  bottom: 0;
-  width: 425px;
-  padding: 15px;
-  background: #000;
-  border: 1px solid #FF0095;
+  display: table-cell;
+  vertical-align: bottom;
+  height: 200px;
 }
 
-.timeline .marker-content::before {
-  content: '';
-  position: absolute;
-  bottom: 0px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-
-.timeline ul li:nth-child(odd) .marker-content {
-  left: 40px;
-}
-
-.timeline ul li:nth-child(odd) .marker-content::before {
-  left: -15px;
-  border-width: 10px 15px 10px 0;
-  border-color: transparent #FF0095 transparent transparent;
-}
-
-.timeline ul li:nth-child(even) .marker-content {
-  left: -465px;
-}
-
-.timeline ul li:nth-child(even) .marker-content::before {
-  right: -15px;
-  border-width: 10px 0 10px 15px;
-  border-color: transparent transparent transparent #FF0095;
-}
-
-.timeline h6 {
+.skills-chart span {
+  margin: 0 50px;
   display: block;
-  margin: 0 0 10px 0;
+  background: rgba(209, 236, 250, 0.75);
+  -webkit-animation: draw 1s ease-in-out;
+          animation: draw 1s ease-in-out;
+}
+
+.skills-chart span:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  display: block;
+  text-align: center;
+  content: attr(title);
+  word-wrap: break-word;
+}
+
+.skills-chart .skill-name {
+  font-size: 14px;
+}
+
+@-webkit-keyframes draw {
+  0% {
+    height: 0;
+  }
+}
+
+@keyframes draw {
+  0% {
+    height: 0;
+  }
 }
 
 #contactSection {
