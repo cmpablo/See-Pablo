@@ -192,15 +192,26 @@ hr {
   margin: 100px 0 0 0;
 }
 
+.chart-labels {
+  text-align: right;
+  padding: 0 15px 0 0;
+  margin: 36px 0 0 0;
+}
+
+.chart-labels .level-name {
+  font-size: 14px;
+  margin: 0 0 30px 0;
+}
+
 .skills-chart {
   display: table;
   table-layout: fixed;
-  width: 60%;
-  max-width: 700px;
+  width: 100%;
+  max-width: 900px;
   height: 250px;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(20%, rgba(255, 255, 255, 0.1)), color-stop(2%, transparent));
-  background-image: linear-gradient(bottom right, rgba(255, 255, 255, 0.1) 20%, transparent 2%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #4E5059), color-stop(2%, transparent));
+  background-image: linear-gradient(bottom, #4E5059 2%, transparent 2%);
   background-size: 100% 50px;
   background-position: left top;
 }
@@ -213,9 +224,10 @@ hr {
 }
 
 .skills-chart span {
-  margin: 0 50px;
+  margin: 0 20px;
   display: block;
-  background: rgba(209, 236, 250, 0.75);
+  background: #FF0095;
+  opacity: 0.65;
   -webkit-animation: draw 1s ease-in-out;
           animation: draw 1s ease-in-out;
 }
@@ -228,10 +240,9 @@ hr {
   display: block;
   text-align: center;
   content: attr(title);
-  word-wrap: break-word;
 }
 
-.skills-chart .skill-name {
+.skills-chart span .skill-name {
   font-size: 14px;
 }
 
