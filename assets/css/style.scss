@@ -191,21 +191,35 @@ hr {
 .random-info {
   margin: 0 0 50px 0;
   .title {
-    width: 145px;
+    width: 170px;
     margin: 0 0 10px 0;
     @include title-style;
+  }
+  .note {
+    font-size: $xs-font-size;
+    margin: 0;
   }
 }
 
 .random-list {
   .list-item {
     font-size: $default-font-size;
-    //padding: 5px 0;
+    margin: 25px 0;
+    a:link {
+      color: $btn-text-color;
+    }
+    a:visited {
+      color: $btn-text-color;
+    }
+    a:hover {
+      text-decoration: none;
+      color: $secondary-color;
+    }
   }
 }
 
 .skills-title {
-  width: 170px;
+  width: 200px;
   margin: 0 0 0 15px;
   @include title-style;
 }
@@ -226,7 +240,7 @@ hr {
   width: 100%;
   max-width: 900px;
   height: 250px;
-  margin: 0 auto;
+  margin: 0 auto 25px auto;
   background-image: linear-gradient(bottom, $grey-color 2%, transparent 2%);
   background-size: 100% 50px;
   background-position: left top;
@@ -264,6 +278,11 @@ hr {
 #contactSection {
   clear: both;
   margin: $section-margin;
+  .title {
+    width: 205px;
+    margin: 0 0 10px 0;
+    @include title-style;
+  }
 }
 
 // ====================== DETAILS PAGE CONTENT ======================
