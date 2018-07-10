@@ -232,6 +232,11 @@ hr {
   color: #F7EB5C;
 }
 
+.agency-list,
+.brands-list {
+  margin: 0 0 50px 0;
+}
+
 .agency-list .title {
   width: 312px;
   margin: 0 0 10px 0;
