@@ -237,7 +237,7 @@ hr {
 
 .agency-list,
 .brands-list {
-  margin: 0 0 50px 0;
+  margin: 0 0 40px 0;
 }
 
 .agency-list .title {
@@ -252,6 +252,10 @@ hr {
   margin: 0 0 10px 0;
   padding: 0 0 0 3px;
   background-color: #FF0095;
+}
+
+.skills-chart {
+  margin: 0 0 50px 0;
 }
 
 .skills-title {
@@ -322,6 +326,27 @@ hr {
   0% {
     height: 0;
   }
+}
+
+.skills-mobile-list {
+  margin: 0 0 40px 0;
+  display: none;
+}
+
+.skills-mobile-list .skill-level {
+  padding: 0;
+  margin: 10px 0;
+}
+
+.skills-mobile-list .skill-level .title {
+  color: #FF0095;
+  opacity: 0.8;
+}
+
+.other-skills-list .title {
+  width: 142px;
+  padding: 0 0 0 3px;
+  background-color: #FF0095;
 }
 
 #contactSection {
@@ -441,6 +466,15 @@ hr {
   #workSection .gallery-img {
     text-align: center;
     vertical-align: middle;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .skills-chart {
+    display: none;
+  }
+  .skills-mobile-list {
+    display: block;
   }
 }
 

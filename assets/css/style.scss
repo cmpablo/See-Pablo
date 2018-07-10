@@ -26,8 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  @include left-justify-text;
-  //@include content-margins;
+  @include left-justify-text; //@include content-margins;
   font-family: $headline-font;
   color: $header-text-color;
   line-height: $default-line-height;
@@ -54,8 +53,7 @@ hr {
 }
 
 .nav-item a:hover {
-  color: $secondary-color !important;
-  //cursor: pointer;
+  color: $secondary-color !important; //cursor: pointer;
 }
 
 // ================================= FOOTER ===================================
@@ -206,8 +204,7 @@ hr {
     @include title-style;
   }
   .note {
-    font-size: $xs-font-size;
-    //margin: 0;
+    font-size: $xs-font-size; //margin: 0;
   }
 }
 
@@ -221,11 +218,11 @@ hr {
 
 .agency-list,
 .brands-list {
-  margin: 0 0 50px 0;
+  margin: 0 0 40px 0;
 }
 
 .agency-list {
-  .title{
+  .title {
     width: 312px;
     margin: 0 0 10px 0;
     @include title-style;
@@ -233,11 +230,15 @@ hr {
 }
 
 .brands-list {
-  .title{
+  .title {
     width: 267px;
     margin: 0 0 10px 0;
     @include title-style;
   }
+}
+
+.skills-chart {
+  margin: 0 0 50px 0;
 }
 
 .skills-title {
@@ -293,6 +294,26 @@ hr {
     0% {
       height: 0;
     }
+  }
+}
+
+.skills-mobile-list {
+  margin: 0 0 40px 0;
+  display: none;
+  .skill-level {
+    padding: 0;
+    margin: 10px 0;
+    .title {
+      color: $primary-color;
+      opacity: 0.8;
+    }
+  }
+}
+
+.other-skills-list {
+  .title {
+    width: 142px;
+    @include title-style;
   }
 }
 
@@ -383,6 +404,15 @@ hr {
       text-align: center;
       vertical-align: middle;
     }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .skills-chart {
+    display: none;
+  }
+  .skills-mobile-list {
+    display: block;
   }
 }
 
