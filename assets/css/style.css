@@ -25,7 +25,6 @@ h4,
 h5,
 h6 {
   text-align: left;
-  margin: 20px auto 0 auto;
   font-family: "Work Sans", sans-serif;
   color: #FFF;
   line-height: 1.6;
@@ -200,7 +199,7 @@ hr {
 
 #aboutSection {
   clear: both;
-  margin: 100px 0 0 0;
+  margin: 100px 0;
 }
 
 .random-info {
@@ -327,7 +326,20 @@ hr {
 
 #contactSection {
   clear: both;
-  margin: 100px 0 0 0;
+  margin: 100px 0;
+}
+
+#contactSection a:link {
+  color: #818181;
+}
+
+#contactSection a:visited {
+  color: #818181;
+}
+
+#contactSection a:hover {
+  text-decoration: none;
+  color: #F7EB5C;
 }
 
 #contactSection .title {

@@ -26,10 +26,23 @@
 }
 
 @mixin content-margins {
-  margin: 20px auto 0 auto;
+  margin: 20px auto;
 }
 
 @mixin title-style {
   padding: 0 0 0 3px;
   background-color: $primary-color;
+}
+
+@mixin content-link {
+  a:link {
+    color: $btn-text-color;
+  }
+  a:visited {
+    color: $btn-text-color;
+  }
+  a:hover {
+    text-decoration: none;
+    color: $secondary-color;
+  }
 }

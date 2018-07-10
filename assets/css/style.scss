@@ -27,7 +27,7 @@ h4,
 h5,
 h6 {
   @include left-justify-text;
-  @include content-margins;
+  //@include content-margins;
   font-family: $headline-font;
   color: $header-text-color;
   line-height: $default-line-height;
@@ -215,16 +215,7 @@ hr {
   .list-item {
     font-size: $default-font-size;
     margin: 0 0 20px 0;
-    a:link {
-      color: $btn-text-color;
-    }
-    a:visited {
-      color: $btn-text-color;
-    }
-    a:hover {
-      text-decoration: none;
-      color: $secondary-color;
-    }
+    @include content-link;
   }
 }
 
@@ -309,6 +300,7 @@ hr {
 #contactSection {
   clear: both;
   margin: $section-margin;
+  @include content-link;
   .title {
     width: 205px;
     margin: 0 0 10px 0;
@@ -318,16 +310,7 @@ hr {
 
 // ====================== DETAILS PAGE CONTENT ======================
 .work-details-btn {
-  a:link {
-    color: $btn-text-color;
-  }
-  a:visited {
-    color: $btn-text-color;
-  }
-  a:hover {
-    text-decoration: none;
-    color: $secondary-color;
-  }
+  @include content-link;
 }
 
 .details-content {
