@@ -53,6 +53,11 @@ hr {
   box-shadow: 0 0px 10px 0px $bg-color;
 }
 
+.nav-item a:hover {
+  color: $secondary-color !important;
+  //cursor: pointer;
+}
+
 // ================================= FOOTER ===================================
 .footer {
   border-top: 1px solid $tertiary-color;

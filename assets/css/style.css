@@ -52,6 +52,10 @@ hr {
           box-shadow: 0 0px 10px 0px #000;
 }
 
+.nav-item a:hover {
+  color: #F7EB5C !important;
+}
+
 .footer {
   border-top: 1px solid #01F4FC;
   padding: 15px;
