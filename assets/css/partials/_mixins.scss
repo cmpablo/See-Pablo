@@ -29,3 +29,7 @@
   margin: 20px auto 0 auto;
 }
 
+@mixin title-style {
+  padding: 0 0 0 2px;
+  background-color: $primary-color;
+}

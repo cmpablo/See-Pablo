@@ -188,9 +188,31 @@ hr {
   margin: $section-margin;
 }
 
+.random-info {
+  margin: 0 0 50px 0;
+  .title {
+    width: 145px;
+    margin: 0 0 10px 0;
+    @include title-style;
+  }
+}
+
+.random-list {
+  .list-item {
+    font-size: $default-font-size;
+    //padding: 5px 0;
+  }
+}
+
+.skills-title {
+  width: 170px;
+  margin: 0 0 0 15px;
+  @include title-style;
+}
+
 .chart-labels {
   text-align: right;
-  padding: 0 15px 0 0;
+  padding: 0 10px 0 0;
   margin: 36px 0 0 0;
   .level-name {
     font-size: $small-font-size;
@@ -198,7 +220,7 @@ hr {
   }
 }
 
-.skills-chart {
+.chart-bars {
   display: table;
   table-layout: fixed;
   width: 100%;
@@ -215,6 +237,7 @@ hr {
     height: 200px;
   }
   span {
+    font-size: $xs-font-size;
     margin: 0 20px;
     display: block;
     background: $primary-color;
@@ -228,9 +251,6 @@ hr {
       display: block;
       text-align: center;
       content: attr(title);
-    }
-    .skill-name {
-      font-size: $small-font-size;
     }
   }
   @keyframes draw {
