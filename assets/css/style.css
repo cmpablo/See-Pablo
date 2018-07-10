@@ -123,6 +123,13 @@ hr {
   margin: 0;
 }
 
+#workSection .work-title {
+  width: 67px;
+  margin: 0;
+  padding: 0 0 0 3px;
+  background-color: #FF0095;
+}
+
 .gallery-img {
   position: relative;
   margin: 0 12px 0 8px;
@@ -198,19 +205,18 @@ hr {
 
 .random-info .title {
   width: 170px;
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
   padding: 0 0 0 3px;
   background-color: #FF0095;
 }
 
 .random-info .note {
   font-size: 12px;
-  margin: 0;
 }
 
 .random-list .list-item {
   font-size: 18px;
-  margin: 25px 0;
+  margin: 0 0 20px 0;
 }
 
 .random-list .list-item a:link {
@@ -226,9 +232,23 @@ hr {
   color: #F7EB5C;
 }
 
+.agency-list .title {
+  width: 312px;
+  margin: 0 0 10px 0;
+  padding: 0 0 0 3px;
+  background-color: #FF0095;
+}
+
+.brands-list .title {
+  width: 267px;
+  margin: 0 0 10px 0;
+  padding: 0 0 0 3px;
+  background-color: #FF0095;
+}
+
 .skills-title {
   width: 200px;
-  margin: 0 0 0 15px;
+  margin: 0;
   padding: 0 0 0 3px;
   background-color: #FF0095;
 }
