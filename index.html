@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
     <title>See Pablo - Portfolio</title>
 </head>
 
@@ -205,8 +206,10 @@
                                 <p class="list-item">My activity of choice is indoor rowing on an erg.</p>
                             </li>
                             <li>
-                                <p class="list-item">I ran<sup>*</sup> the
-                                    <a href="http://www.chiditarod.org/" target="_blank" class="content-link">Chiditarod</a> once<sup>†</sup> and it was one of the most fun and ridiculous things ever.</p>
+                                <p class="list-item">I ran
+                                    <sup>*</sup> the
+                                    <a href="http://www.chiditarod.org/" target="_blank" class="content-link">Chiditarod</a> once
+                                    <sup>†</sup> and it was one of the most fun and ridiculous things ever.</p>
                             </li>
                             <li>
                                 <p class="list-item">One Halloween, I dressed as Mr. T and won best costume.</p>
@@ -275,8 +278,8 @@
                                 <span class="chart-anim" style="height:40%" title="CSS + SASS"></span>
                             </li>
                             <li>
-                                    <span class="chart-anim" style="height:55%" title="Powerpoint"></span>
-                                </li>
+                                <span class="chart-anim" style="height:55%" title="Powerpoint"></span>
+                            </li>
                             <li>
                                 <span class="chart-anim" style="height:30%" title="InDesign"></span>
                             </li>
@@ -388,15 +391,17 @@
                     <div class="col-md-6 contact-summary">
                         <p>You want to make cool things. I want to make cool things. Let's make cool things together!</p>
                         <p>
-                            I'm available to work onsite in Orlando, FL, or remote is good too.
+                            I'm available to work onsite in Orlando, FL, or remote is works too.
                         </p>
                     </div>
                     <div class="col-md-1"></div>
                     <div class="col-md-5">
                         <p>
-                            <a id="email-addy" data-clipboard-text="christine.pablo@gmail.com">
-                                <span class="far fa-envelope email-btn"></span>
-                            </a>
+                            <button onclick="copyEmailText()">
+                                <a id="email-addy" value="christine.pablo@gmail.com">
+                                    <span class="far fa-envelope email-btn"></span>
+                                </a>
+                            </button>
                             Contact me
                         </p>
                         <a href="assets/downloads/cpablo_cv.pdf" target="_blank">Download my CV</a>
@@ -431,28 +436,6 @@
             </div>
         </footer>
     </div>
-    <!---------------------------------- JAVASCRIPT ---------------------------------->
-    <script>
-        $('#myNavbar a').on('click', function (event) {
-            if (this.hash !== '') {
-                event.preventDefault();
-
-                let hash = this.hash;
-
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function () {
-                    window.location.hash = hash;
-                });
-            }
-        });
-
-        function copyEmailText() {
-            let copyText = document.getElementById("email-addy");
-            copyText.select();
-            document.execCommand("copy");
-        }
-    </script>
 </body>
 
 </html>
