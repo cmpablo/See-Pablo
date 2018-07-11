@@ -97,10 +97,10 @@ hr {
 .header-bg {
   position: relative;
   background-image: linear-gradient( to bottom right, #65ffff, #6086ee, #5f8aff);
-  height: 375px;
+  height: 400px;
   margin: 0 0 100px 0;
   h1 {
-    padding: 30px 0 0 0;
+    padding: 50px 0 0 0;
   }
   #my-face {
     width: 135px;
@@ -247,7 +247,7 @@ hr {
 
 .agency-list,
 .brands-list {
-  margin: 0 0 40px 0;
+  margin: 0 0 50px 0;
 }
 
 .agency-list {
@@ -255,6 +255,12 @@ hr {
     width: 312px;
     margin: 0 0 10px 0;
     @include title-style;
+  }
+}
+
+.list-content {
+  p {
+    margin: 0 0 10px 0;
   }
 }
 
@@ -324,6 +330,11 @@ hr {
       height: 0;
     }
   }
+}
+
+#chart-note {
+  font-size: $xs-font-size;
+  color: $btn-text-color;
 }
 
 .skills-mobile-list {
