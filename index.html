@@ -18,7 +18,7 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="0">
     <!-------------------------- NAVIGATION ---------------------------->
-    <div class="container-fluid">
+    <div class="container-fluid main-container">
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
             <a class="navbar-brand ml-3" href="index.html">
                 <img src="assets/images/logo.png" alt="logo" id="logo" />
@@ -181,7 +181,7 @@
             <section class="content-section" id="aboutSection">
                 <div class="row">
                     <div class="col-md-12 about-me">
-                        <img src="assets/images/icon_me.svg" alt="christine" id="my-face">
+                        <img src="assets/images/my_face.svg" alt="christine" id="my-face">
                         <h4 class="title">About Christine</h4>
                         <p class="me-summary">Venison short loin pork belly, flank filet mignon turkey prosciutto. Kielbasa meatloaf drumstick
                             short loin ham. Bacon prosciutto burgdoggen kevin shankle cupim pancetta short loin ground round.
@@ -205,10 +205,8 @@
                                 <p class="list-item">My activity of choice is indoor rowing on an erg.</p>
                             </li>
                             <li>
-                                <p class="list-item">I ran
-                                    <sup>*</sup> the
-                                    <a href="http://www.chiditarod.org/" target="_blank" class="content-link">Chiditarod</a> once
-                                    <sup>†</sup> and it was one of the funnest and most ridiculous things ever.</p>
+                                <p class="list-item">I ran<sup>*</sup> the
+                                    <a href="http://www.chiditarod.org/" target="_blank" class="content-link">Chiditarod</a> once<sup>†</sup> and it was one of the most fun and ridiculous things ever.</p>
                             </li>
                             <li>
                                 <p class="list-item">One Halloween, I dressed as Mr. T and won best costume.</p>
@@ -222,7 +220,7 @@
                         <p class="note">
                             <sup>*</sup> by ran, I mean trudged through snow tethered to a shopping cart
                             <br>
-                            <sup>†</sup> by once, I mean twice, but the second time was pretty much meh
+                            <sup>†</sup> actually twice, but the second time was pretty much meh
                         </p>
                     </div>
                     <!---------- AGENCY + BRANDS LISTS ---------->
@@ -243,23 +241,23 @@
                     <!---------- CHART ---------->
                     <div class="row">
                         <div class="col-md-6">
-                            <h4 class="skills-title">I got some skills</h4>
+                            <h4 class="skills-title">Skills</h4>
                         </div>
                     </div>
                     <div class="row skills-chart">
                         <div class="col-md-2">
                             <ul class="chart-labels">
                                 <li class="level-name">
-                                    <span>Oh My Damn!</span>
+                                    <span>AWWW YEAH!</span>
                                 </li>
                                 <li class="level-name">
-                                    <span>Pretty Good</span>
+                                    <span>Medium</span>
                                 </li>
                                 <li class="level-name">
-                                    <span>I'm Alright</span>
+                                    <span>Good</span>
                                 </li>
                                 <li class="level-name">
-                                    <span>Basic B*tch</span>
+                                    <span>Basic</span>
                                 </li>
                             </ul>
                         </div>
@@ -274,16 +272,16 @@
                                 <span class="chart-anim" style="height:40%" title="HTML"></span>
                             </li>
                             <li>
-                                <span class="chart-anim" style="height:40%" title="CSS / SASS"></span>
+                                <span class="chart-anim" style="height:40%" title="CSS + SASS"></span>
                             </li>
+                            <li>
+                                    <span class="chart-anim" style="height:55%" title="Powerpoint"></span>
+                                </li>
                             <li>
                                 <span class="chart-anim" style="height:30%" title="InDesign"></span>
                             </li>
                             <li>
-                                <span class="chart-anim" style="height:55%" title="Powerpoint"></span>
-                            </li>
-                            <li>
-                                <span class="chart-anim" style="height:25%" title="JavaScript"></span>
+                                <span class="chart-anim" style="height:25%" title="JavaScript + JQuery"></span>
                             </li>
                             <li>
                                 <span class="chart-anim" style="height:35%" title="Node"></span>
@@ -372,10 +370,10 @@
                     <!---------- OTHER SKILLS ---------->
                     <div class="row">
                         <div class="col-md-12 other-skills-list">
-                            <h4 class="title">I got some other skills</h4>
+                            <h4 class="title">Other skills + hobbies</h4>
                             <p class="list">
-                                JQuery, Bootstrap, Materialize, MySQL, MongoDB, old timey crafts, adhoc furniture building, parallel parking, interior design,
-                                playing well with others
+                                <!-- JQuery, Bootstrap, Materialize, MySQL, MongoDB, old timey crafts, adhoc furniture building, parallel parking, interior design,
+                                playing well with others -->
                             </p>
                         </div>
                     </div>
@@ -386,7 +384,24 @@
             <!---------------------------- CONTACT / CV DOWNLOAD ---------------------------->
             <section class="content-section" id="contactSection">
                 <h4 class="title">Let's get to work!</h4>
-                <a href="assets/downloads/cpablo_cv.pdf" target="_blank">Download my CV</a>
+                <div class="row">
+                    <div class="col-md-6 contact-summary">
+                        <p>You want to make cool things. I want to make cool things. Let's make cool things together!</p>
+                        <p>
+                            I'm available to work onsite in Orlando, FL, or remote is good too.
+                        </p>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                        <p>
+                            <a id="email-addy" data-clipboard-text="christine.pablo@gmail.com">
+                                <span class="far fa-envelope email-btn"></span>
+                            </a>
+                            Contact me
+                        </p>
+                        <a href="assets/downloads/cpablo_cv.pdf" target="_blank">Download my CV</a>
+                    </div>
+                </div>
 
             </section>
         </div>
@@ -431,6 +446,12 @@
                 });
             }
         });
+
+        function copyEmailText() {
+            let copyText = document.getElementById("email-addy");
+            copyText.select();
+            document.execCommand("copy");
+        }
     </script>
 </body>
 

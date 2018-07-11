@@ -8,7 +8,7 @@ body {
   max-width: 100%;
 }
 
-.container-fluid {
+.main-container {
   margin: -110px 0 0 0;
   padding: 0;
   overflow-x: hidden;
@@ -48,6 +48,10 @@ hr {
 
 #logo {
   width: 75px;
+}
+
+.note {
+  font-size: 12px;
 }
 
 .navbar {
@@ -246,10 +250,6 @@ hr {
   background-color: #FF0095;
 }
 
-.random-info .note {
-  font-size: 12px;
-}
-
 .random-list .list-item {
   font-size: 18px;
   margin: 0 0 20px 0;
@@ -409,6 +409,10 @@ hr {
   margin: 0 0 10px 0;
   padding: 0 0 0 3px;
   background-color: #FF0095;
+}
+
+.contact-summary .email-btn {
+  cursor: pointer;
 }
 
 .work-details-btn a:link {
