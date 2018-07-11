@@ -292,7 +292,7 @@ hr {
 }
 
 .skills-title {
-  width: 200px;
+  width: 69px;
   margin: 0;
   padding: 0 0 0 3px;
   background-color: #FF0095;
@@ -377,7 +377,7 @@ hr {
 }
 
 .other-skills-list .title {
-  width: 272px;
+  width: 265px;
   padding: 0 0 0 3px;
   background-color: #FF0095;
 }
@@ -404,8 +404,15 @@ hr {
   color: #F7EB5C;
 }
 
-#contactSection .title {
+.contact-summary .title {
   width: 213px;
+  margin: 0 0 10px 0;
+  padding: 0 0 0 3px;
+  background-color: #FF0095;
+}
+
+.contact-info .title {
+  width: 191px;
   margin: 0 0 10px 0;
   padding: 0 0 0 3px;
   background-color: #FF0095;
@@ -416,7 +423,7 @@ hr {
   color: #818181;
   border: none;
   padding: 0;
-  margin: 0 0 15px 0;
+  margin: 5px 0 15px 0;
   cursor: pointer;
 }
 

@@ -271,7 +271,7 @@ hr {
 }
 
 .skills-title {
-  width: 200px;
+  width: 69px;
   margin: 0;
   @include title-style;
 }
@@ -341,7 +341,7 @@ hr {
 
 .other-skills-list {
   .title {
-    width: 272px;
+    width: 265px;
     @include title-style;
   }
   .list {
@@ -354,8 +354,19 @@ hr {
   clear: both;
   margin: $section-margin;
   @include content-link;
+}
+
+.contact-summary {
   .title {
     width: 213px;
+    margin: 0 0 10px 0;
+    @include title-style;
+  }
+}
+
+.contact-info {
+  .title {
+    width: 191px;
     margin: 0 0 10px 0;
     @include title-style;
   }
@@ -366,7 +377,7 @@ hr {
   color: $btn-text-color;
   border: none;
   padding: 0;
-  margin: 0 0 15px 0;
+  margin: 5px 0 15px 0;
   cursor: pointer;
 }
 
