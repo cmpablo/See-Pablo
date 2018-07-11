@@ -106,7 +106,7 @@ hr {
 }
 
 .header-bg h1 {
-  padding: 20px 0 0 0;
+  padding: 30px 0 0 0;
 }
 
 .header-bg #my-face {
@@ -411,8 +411,30 @@ hr {
   background-color: #FF0095;
 }
 
-.contact-summary .email-btn {
+#copy-btn {
+  background-color: #000;
+  color: #818181;
+  border: none;
+  padding: 0;
+  margin: 0 0 15px 0;
   cursor: pointer;
+}
+
+#copy-btn:hover {
+  color: #F7EB5C;
+}
+
+.tooltip-inner {
+  background-color: #000;
+  color: #FFF;
+  border: 1px solid #FF0095;
+  padding: 5px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.tooltip .arrow::before {
+  border-top-color: #FF0095;
+  border-bottom-color: #FF0095;
 }
 
 .work-details-btn a:link {

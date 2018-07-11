@@ -46,3 +46,12 @@
     color: $secondary-color;
   }
 }
+
+@mixin tool-tip-style {
+  .tooltip-inner {
+    background-color: $primary-color;
+  }
+  .tooltip.bs-tooltip-right .arrow:before {
+    border-right-color: $primary-color !important;
+  }
+}

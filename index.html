@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="assets/js/index.js"></script>
     <title>See Pablo - Portfolio</title>
@@ -388,23 +389,20 @@
             <section class="content-section" id="contactSection">
                 <h4 class="title">Let's get to work!</h4>
                 <div class="row">
-                    <div class="col-md-6 contact-summary">
+                    <div class="col-md-7 contact-summary">
                         <p>You want to make cool things. I want to make cool things. Let's make cool things together!</p>
                         <p>
-                            I'm available to work onsite in Orlando, FL, or remote is works too.
+                            I'm available to work remotely or onsite in Orlando, FL.
                         </p>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-md-5">
-                        <p>
-                            <button onclick="copyEmailText()">
-                                <a id="email-addy" value="christine.pablo@gmail.com">
-                                    <span class="far fa-envelope email-btn"></span>
-                                </a>
-                            </button>
-                            Contact me
-                        </p>
-                        <a href="assets/downloads/cpablo_cv.pdf" target="_blank">Download my CV</a>
+                    <div class="col-md-4">
+                        <button class="btn-tooltip" data-toggle="tooltip" data-placement="top" title="Copy email to clipboard" onclick="copyToClipboard('christine.pablo@gmail.com')" id="copy-btn">
+                            <span class="far fa-envelope"></span> Contact me
+                        </button>
+                        <br>
+                        <a href="assets/downloads/cpablo_cv.pdf" target="_blank">
+                            <span class="fas fa-file-download"></span> Download my CV</a>
                     </div>
                 </div>
 
@@ -436,6 +434,20 @@
             </div>
         </footer>
     </div>
+
+    <!-------------------------------------- JAVASCRIPT / JQUERY -------------------------------------->
+    <script>
+        function copyToClipboard(value) {
+            let tempInput = document.createElement('input');
+            tempInput.style = 'position: absolute; left: -1000px; top: -1000px';
+            tempInput.value = value;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+        }
+    </script>
+
 </body>
 
 </html>

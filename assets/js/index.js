@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  ///// SCROLLSPY SMOOTH SCROLL /////
   $('#myNavbar a').on('click', function (event) {
     if (this.hash !== '') {
       event.preventDefault();
@@ -13,10 +14,6 @@ $(document).ready(function () {
     }
   });
 
-  function copyEmailText() {
-    let copyText = document.getElementById('email-addy');
-    copyText.select();
-    document.execCommand('copy');
-    //console.log('copied text: ' + copyText.value)
-  }
+  $('[data-toggle="tooltip"]').tooltip(); 
+
 });
