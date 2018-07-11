@@ -476,11 +476,11 @@ hr {
 }
 
 .details-content .flat-img {
-  margin: 27px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 .details-content .screen-img {
-  margin: -10px 0 0 0;
+  margin: -27px 0 0 0;
 }
 
 .details-content img {
@@ -501,6 +501,7 @@ hr {
   margin: 10px 0 35px 0;
 }
 
+.details-content .header,
 .details-content .subhead {
   margin: 0;
 }
