@@ -8,6 +8,11 @@ body {
   margin: $margin-body;
   height: $body-height;
   max-width: 100%;
+}
+
+.container-fluid {
+  margin: -110px 0 0 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
@@ -53,7 +58,7 @@ hr {
 }
 
 .nav-item a:hover {
-  color: $secondary-color !important; //cursor: pointer;
+  color: $secondary-color !important;
 }
 
 // ================================= FOOTER ===================================
@@ -89,7 +94,7 @@ hr {
   position: relative;
   background-image: linear-gradient( to bottom right, #65ffff, #6086ee, #5f8aff);
   height: 375px;
-  margin: -110px 0 100px 0;
+  margin: 0 0 100px 0;
   h1 {
     padding: 50px 0 0 0;
   }
@@ -119,10 +124,10 @@ hr {
 
 // ========================= GALLERY CONTENT =========================
 #workSection {
-  width: 850px;
-  margin: 0;
+  width: 900px;
+  margin: 0 auto;
   .work-title {
-    width: 67px;
+    width: 236px;
     margin: 0;
     @include title-style;
   }
@@ -130,12 +135,12 @@ hr {
 
 .gallery-img {
   position: relative;
-  margin: 0 12px 0 8px;
+  margin: 0 0 0 10px;
   display: inline-block;
   width: 400px;
   text-align: center;
   vertical-align: middle;
-  img {
+  .image {
     margin: 20px 15px;
   }
   .text {
@@ -147,7 +152,7 @@ hr {
     height: 80%;
     width: 100%;
     left: 15px;
-    top: 20px;
+     top: 20px;
     opacity: 0;
     -webkit-transition: $transition-time;
     -moz-transition: $transition-time;
@@ -312,8 +317,11 @@ hr {
 
 .other-skills-list {
   .title {
-    width: 142px;
+    width: 272px;
     @include title-style;
+  }
+  .list {
+    margin: 0;
   }
 }
 
@@ -323,7 +331,7 @@ hr {
   margin: $section-margin;
   @include content-link;
   .title {
-    width: 205px;
+    width: 213px;
     margin: 0 0 10px 0;
     @include title-style;
   }
@@ -417,6 +425,7 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
+  
   // intro header
   .header-bg {
     height: 375px;
@@ -424,41 +433,28 @@ hr {
       font-size: $lg-font-size-resp;
       padding: 30px 0 0 0;
     }
-  } // about section timeline
-  .timeline {
-    ul li {
-      margin-left: 20px;
+    p {
+      font-size: $med-font-size;
     }
-    ul li .marker-content {
-      width: calc(100vw - 91px);
-    }
-    ul li:nth-child(even) .marker-content {
-      left: 45px;
-    }
-    ul li:nth-child(even) .marker-content::before {
-      left: -15px;
-      border-width: 10px 0 10px 15px;
-      border-color: transparent $primary-color transparent transparent;
-    }
-  }
+  } 
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 375px) {
   // gallery images
-  #workSection {
-    width: 400px;
-    margin: 0 0 0 -20px;
-    .gallery-img {
-      text-align: center;
-      vertical-align: middle;
-      margin: 0 auto;
-      .overlay {
-        width: 350px;
-        margin: 0 0 0 10px;
-      }
-    }
-    img {
-      width: 350px;
-    }
-  }
+  // #workSection {
+  //   width: 350px;
+  //   margin: 0 0 0 -20px;
+  //   .gallery-img {
+  //     text-align: center;
+  //     vertical-align: middle;
+  //     margin: 0 auto;
+  //     .overlay {
+  //       width: 350px;
+  //       margin: 0 0 0 10px;
+  //     }
+  //   }
+  //   .image {
+  //     width: 300px;
+  //   }
+  // }
 }

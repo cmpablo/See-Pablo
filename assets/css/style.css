@@ -6,6 +6,11 @@ body {
   margin: 175px 0 0 0;
   height: 100%;
   max-width: 100%;
+}
+
+.container-fluid {
+  margin: -110px 0 0 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
@@ -93,7 +98,7 @@ hr {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#65ffff), color-stop(#6086ee), to(#5f8aff));
   background-image: linear-gradient(to bottom right, #65ffff, #6086ee, #5f8aff);
   height: 375px;
-  margin: -110px 0 100px 0;
+  margin: 0 0 100px 0;
 }
 
 .header-bg h1 {
@@ -122,12 +127,12 @@ hr {
 }
 
 #workSection {
-  width: 850px;
-  margin: 0;
+  width: 900px;
+  margin: 0 auto;
 }
 
 #workSection .work-title {
-  width: 67px;
+  width: 236px;
   margin: 0;
   padding: 0 0 0 3px;
   background-color: #FF0095;
@@ -135,14 +140,14 @@ hr {
 
 .gallery-img {
   position: relative;
-  margin: 0 12px 0 8px;
+  margin: 0 0 0 10px;
   display: inline-block;
   width: 400px;
   text-align: center;
   vertical-align: middle;
 }
 
-.gallery-img img {
+.gallery-img .image {
   margin: 20px 15px;
 }
 
@@ -199,7 +204,7 @@ hr {
 
 #aboutSection {
   clear: both;
-  margin: 100px 0;
+  margin: 75px 0;
 }
 
 .random-info {
@@ -344,14 +349,18 @@ hr {
 }
 
 .other-skills-list .title {
-  width: 142px;
+  width: 272px;
   padding: 0 0 0 3px;
   background-color: #FF0095;
 }
 
+.other-skills-list .list {
+  margin: 0;
+}
+
 #contactSection {
   clear: both;
-  margin: 100px 0;
+  margin: 75px 0;
 }
 
 #contactSection a:link {
@@ -368,7 +377,7 @@ hr {
 }
 
 #contactSection .title {
-  width: 205px;
+  width: 213px;
   margin: 0 0 10px 0;
   padding: 0 0 0 3px;
   background-color: #FF0095;
@@ -486,38 +495,8 @@ hr {
     font-size: 40px;
     padding: 30px 0 0 0;
   }
-  .timeline ul li {
-    margin-left: 20px;
-  }
-  .timeline ul li .marker-content {
-    width: calc(100vw - 91px);
-  }
-  .timeline ul li:nth-child(even) .marker-content {
-    left: 45px;
-  }
-  .timeline ul li:nth-child(even) .marker-content::before {
-    left: -15px;
-    border-width: 10px 0 10px 15px;
-    border-color: transparent #FF0095 transparent transparent;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  #workSection {
-    width: 400px;
-    margin: 0 0 0 -20px;
-  }
-  #workSection .gallery-img {
-    text-align: center;
-    vertical-align: middle;
-    margin: 0 auto;
-  }
-  #workSection .gallery-img .overlay {
-    width: 350px;
-    margin: 0 0 0 10px;
-  }
-  #workSection img {
-    width: 350px;
+  .header-bg p {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
