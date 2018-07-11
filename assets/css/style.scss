@@ -96,7 +96,16 @@ hr {
   height: 375px;
   margin: 0 0 100px 0;
   h1 {
-    padding: 50px 0 0 0;
+    padding: 20px 0 0 0;
+  }
+  #my-face {
+    width: 135px;
+    display: block;
+    padding: 30px 0 0 0;
+    margin: 0 auto;
+  }
+  #my-name {
+    color: $secondary-color;
   }
 }
 
@@ -199,6 +208,20 @@ hr {
 #aboutSection {
   clear: both;
   margin: $section-margin;
+}
+
+.about-me {
+  margin: 0 0 50px 0;
+  .title {
+    width: 190px;
+    margin: 0 0 15px 0;
+    @include title-style;
+  }
+  #my-face {
+    width: 175px;
+    display: block;
+    margin: 0 auto 50px auto;
+  }
 }
 
 .random-info {

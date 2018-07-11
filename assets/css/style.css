@@ -102,7 +102,18 @@ hr {
 }
 
 .header-bg h1 {
-  padding: 50px 0 0 0;
+  padding: 20px 0 0 0;
+}
+
+.header-bg #my-face {
+  width: 135px;
+  display: block;
+  padding: 30px 0 0 0;
+  margin: 0 auto;
+}
+
+.header-bg #my-name {
+  color: #F7EB5C;
 }
 
 .header-bg:before {
@@ -205,6 +216,23 @@ hr {
 #aboutSection {
   clear: both;
   margin: 75px 0;
+}
+
+.about-me {
+  margin: 0 0 50px 0;
+}
+
+.about-me .title {
+  width: 190px;
+  margin: 0 0 15px 0;
+  padding: 0 0 0 3px;
+  background-color: #FF0095;
+}
+
+.about-me #my-face {
+  width: 175px;
+  display: block;
+  margin: 0 auto 50px auto;
 }
 
 .random-info {
