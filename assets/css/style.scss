@@ -499,6 +499,11 @@ hr {
   .skills-mobile-list {
     display: block;
   }
+  .header-bg {
+    h1 {
+      padding: 20px 0 0 0;
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -507,7 +512,7 @@ hr {
     height: 375px;
     h1 {
       font-size: $lg-font-size-resp;
-      padding: 30px 0 0 0;
+      padding: 20px 0 0 0;
     }
     p {
       font-size: $med-font-size;
