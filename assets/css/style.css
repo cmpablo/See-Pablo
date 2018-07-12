@@ -229,7 +229,11 @@ hr {
 .about-me #my-face {
   width: 225px;
   display: block;
-  margin: 30px auto;
+  margin: auto;
+}
+
+.me-summary {
+  margin: auto;
 }
 
 .random-info {
