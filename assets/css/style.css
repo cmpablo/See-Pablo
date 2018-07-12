@@ -18,12 +18,7 @@ body {
   max-width: 900px;
 }
 
-h1 {
-  text-align: left;
-  font-size: 55px;
-  color: #FFF;
-}
-
+h1,
 h2,
 h3,
 h4,
@@ -99,22 +94,33 @@ hr {
 
 .header-bg {
   position: relative;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#65ffff), color-stop(#6086ee), to(#5f8aff));
-  background-image: linear-gradient(to bottom right, #65ffff, #6086ee, #5f8aff);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#65ffff), color-stop(#6790ff), to(#5f8aff));
+  background-image: linear-gradient(to bottom right, #65ffff, #6790ff, #5f8aff);
   height: 400px;
   margin: 0 0 100px 0;
 }
 
-.header-bg h1 {
-  padding: 50px 0 0 0;
+.header-content {
+  margin: 0 auto;
+  padding: 0 50px;
 }
 
-.header-bg .header-text {
-  margin: 0 75px 0 0;
+.header-content .title-text {
+  padding: 0;
 }
 
-.header-bg #my-name {
-  color: #F7EB5C;
+.header-content #head-title {
+  font-size: 50px;
+  padding: 125px 0 0 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.header-content #my-face {
+  float: left;
+  width: 250px;
+  margin: 0 auto;
+  padding: 60px 40px 150px 0;
 }
 
 .header-bg:before {
@@ -221,12 +227,6 @@ hr {
   margin: 0 0 15px 0;
   padding: 0 0 0 3px;
   background-color: #FF0095;
-}
-
-.about-me #my-face {
-  width: 225px;
-  display: block;
-  margin: auto;
 }
 
 .me-summary {
@@ -556,15 +556,28 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
-  .header-bg {
-    height: 375px;
+  .header-content {
+    margin: 0 auto;
+    padding: 0 50px;
   }
-  .header-bg h1 {
+  .header-content .title-text {
+    padding: 0;
+  }
+  .header-content #head-title {
     font-size: 40px;
-    padding: 20px 0 0 0;
+    padding: 100px 0 0 0;
+    margin: 0;
+    line-height: 1;
   }
-  .header-bg p {
-    font-size: 16px;
+  .header-content #header-text {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  .header-content #my-face {
+    float: left;
+    width: 250px;
+    margin: 0 auto;
+    padding: 60px 40px 150px 0;
   }
   #workSection {
     width: 375px;
@@ -582,6 +595,28 @@ hr {
 }
 
 @media screen and (max-width: 375px) {
+  .header-content {
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  .header-content .title-text {
+    padding: 0;
+  }
+  .header-content #head-title {
+    font-size: 30px;
+    padding: 85px 0 0 0;
+    margin: 0;
+    line-height: 1;
+  }
+  .header-content #header-text {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  .header-content #my-face {
+    width: 175px;
+    margin: 0 45px;
+    padding: 30px 0;
+  }
   #workSection .gallery-img {
     width: 325px;
   }
