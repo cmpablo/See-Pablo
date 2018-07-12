@@ -14,8 +14,6 @@
 	.st8{fill:#F9F0E4;}
 	.st9{fill:none;stroke:#000000;stroke-linecap:round;stroke-miterlimit:10;}
 	.st10{fill:none;stroke:#F9ED32;stroke-width:2;stroke-miterlimit:10;}
-	.st11{font-family:'WorkSans-Regular';}
-	.st12{font-size:23px;}
 </style>
 <g>
 	
@@ -59,12 +57,12 @@
 				<g class="st7">
 					<g>
 						
-							<image style="overflow:visible;enable-background:new    ;" width="342" height="342" xlink:href="9A60E69C27C1D7BC.png"  transform="matrix(0.2372 0 0 0.2372 48.6684 54.5388)">
+							<image style="overflow:visible;enable-background:new    ;" width="342" height="342" xlink:href="9A60E69C27C1D7BB.png"  transform="matrix(0.2372 0 0 0.2372 48.6684 54.5388)">
 						</image>
 					</g>
 					<g>
 						
-							<image style="overflow:visible;enable-background:new    ;" width="342" height="342" xlink:href="9A60E69C27C1D7C4.png"  transform="matrix(0.2372 0 0 0.2372 99.4786 54.5388)">
+							<image style="overflow:visible;enable-background:new    ;" width="342" height="342" xlink:href="9A60E69C27C1D7C5.png"  transform="matrix(0.2372 0 0 0.2372 99.4786 54.5388)">
 						</image>
 					</g>
 				</g>
@@ -100,5 +98,11 @@
 	</g>
 </g>
 <circle class="st10" cx="100.3" cy="100" r="94"/>
-<text transform="matrix(1 0 0 1 21 99.5)" class="st11 st12">Hi.</text>
+<g>
+	<path d="M35.4,84.3v15.2h-1.8v-6.8h-8.2v6.8h-1.8V84.3h1.8v6.6h8.2v-6.6H35.4z"/>
+	<path d="M40.2,85.4c-0.3-0.3-0.4-0.6-0.4-1s0.1-0.7,0.4-1s0.6-0.4,1-0.4s0.7,0.1,1,0.4s0.4,0.6,0.4,1s-0.1,0.7-0.4,1
+		s-0.6,0.4-1,0.4S40.4,85.7,40.2,85.4z M42.1,99.5h-1.8V88h1.8V99.5z"/>
+	<path d="M48.6,97.2c0.3,0.3,0.4,0.6,0.4,1.1c0,0.4-0.1,0.8-0.4,1.1c-0.3,0.3-0.6,0.4-1.1,0.4c-0.4,0-0.8-0.1-1.1-0.4
+		S46,98.7,46,98.2c0-0.4,0.1-0.8,0.4-1.1c0.3-0.3,0.6-0.4,1.1-0.4C48,96.7,48.3,96.9,48.6,97.2z"/>
+</g>
 </svg>
