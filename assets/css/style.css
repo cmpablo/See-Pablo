@@ -109,6 +109,10 @@ hr {
   padding: 50px 0 0 0;
 }
 
+.header-bg .header-text {
+  margin: 0 75px 0 0;
+}
+
 .header-bg #my-name {
   color: #F7EB5C;
 }
@@ -139,16 +143,9 @@ hr {
   margin: 0 auto;
 }
 
-#workSection .work-title {
-  width: 236px;
-  margin: 0;
-  padding: 0 0 0 3px;
-  background-color: #FF0095;
-}
-
 .gallery-img {
   position: relative;
-  margin: 0 0 0 10px;
+  margin: 0 10px;
   display: inline-block;
   width: 400px;
   text-align: center;
@@ -166,8 +163,8 @@ hr {
 .gallery-img .overlay {
   background: #000;
   position: absolute;
-  height: 80%;
-  width: 100%;
+  height: 160px;
+  width: 400px;
   left: 15px;
   top: 20px;
   opacity: 0;
@@ -568,6 +565,32 @@ hr {
   }
   .header-bg p {
     font-size: 16px;
+  }
+  #workSection {
+    width: 375px;
+  }
+  #workSection .gallery-img {
+    width: 355px;
+  }
+  #workSection .gallery-img .image {
+    width: 90%;
+  }
+  #workSection .gallery-img .overlay {
+    width: 320px;
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #workSection .gallery-img {
+    width: 325px;
+  }
+  #workSection .gallery-img .image {
+    width: 90%;
+  }
+  #workSection .gallery-img .overlay {
+    width: 295px;
+    height: 120px;
   }
 }
 /*# sourceMappingURL=style.css.map */
