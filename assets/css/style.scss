@@ -215,7 +215,7 @@ hr {
 .about-me {
   margin: 0 0 50px 0;
   .title {
-    width: 190px;
+    width: 192px;
     margin: 0 0 15px 0;
     @include title-style;
   }
@@ -228,7 +228,7 @@ hr {
 .random-info {
   margin: 0 0 50px 0;
   .title {
-    width: 170px;
+    width: 173px;
     margin: 0 0 15px 0;
     @include title-style;
   }
@@ -249,7 +249,7 @@ hr {
 
 .agency-list {
   .title {
-    width: 312px;
+    width: 315px;
     margin: 0 0 10px 0;
     @include title-style;
   }
@@ -263,7 +263,7 @@ hr {
 
 .brands-list {
   .title {
-    width: 267px;
+    width: 270px;
     margin: 0 0 10px 0;
     @include title-style;
   }
@@ -274,7 +274,7 @@ hr {
 }
 
 .skills-title {
-  width: 69px;
+  width: 72px;
   margin: 0;
   @include title-style;
 }
@@ -329,11 +329,6 @@ hr {
   }
 }
 
-#chart-note {
-  font-size: $xs-font-size;
-  color: $btn-text-color;
-}
-
 .skills-mobile-list {
   margin: 0 0 50px 0;
   display: none;
@@ -349,7 +344,7 @@ hr {
 
 .other-skills-list {
   .title {
-    width: 265px;
+    width: 267px;
     @include title-style;
   }
   .list {
@@ -366,7 +361,7 @@ hr {
 
 .contact-summary {
   .title {
-    width: 213px;
+    width: 215px;
     margin: 0 0 10px 0;
     @include title-style;
   }
@@ -374,7 +369,7 @@ hr {
 
 .contact-info {
   .title {
-    width: 191px;
+    width: 193px;
     margin: 0 0 10px 0;
     @include title-style;
   }
